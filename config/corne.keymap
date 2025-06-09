@@ -2,11 +2,45 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define ___ &none
+
+#define SYM 1
+#define NAV 2
+#define NUM 3
+#define SYS 4
+
 #define HYPER LS(LA(LC(LCMD)))
 
-&mt {
-    flavor = "balanced";
-};
+#define BT_SEL_0 &bt BT_SEL 0
+#define BT_SEL_1 &bt BT_SEL 1
+#define BT_SEL_2 &bt BT_SEL 2
+#define BT_CLEAR &bt BT_CLR
+
+/*
+ *  ╭────────────────────────┬────────────────────────╮
+ *  │  0   1   2   3   4   5 │  6   7   8   9  10  11 │
+ *  │ 12  13  14  15  16  17 │ 18  19  20  21  22  23 │
+ *  │ 24  25  26  27  28  29 │ 30  31  32  33  34  35 │
+ *  ╰───────────╮ 36  37  38 │ 39  40  41 ╭───────────╯
+ *              ╰────────────┴────────────╯
+ */
+
+#define LHS 0  1  2  3  4  5   12 13 14 15 16 17  24 25 26 27 28 29
+#define RHS 6  7  8  9  10 11  18 19 20 21 22 23  30 31 32 33 34 35
+#define TMB 36 37 38 39 40 41
+
+#define DEFINE_HRM(_label, _name, _hold, _tap, _triggers, ...)  \
+    _label: _name {                                             \
+      compatible = "zmk,behavior-hold-tap";                     \
+      #binding-cells = <2>;                                     \
+      flavor = "balanced";                                      \
+      tapping-term-ms = <200>;                                  \
+      quick-tap-ms = <175>;                                     \
+      bindings = <_hold>, <_tap>;                               \
+      hold-trigger-key-positions = <_triggers>;                 \
+      hold-trigger-on-release;                                  \
+      __VA_ARGS__                                               \
+    }
 
 / {
     keymap {
@@ -15,49 +49,79 @@
         base_layer {
             display-name = "base";
             bindings = <
-    &none     &kp Q       &kp W      &kp F      &kp P       &kp B        &kp J     &kp L       &kp U      &kp Y      &kp SEMI    &kp BSLH
-    &kp ESC   &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHFT T &kp G        &kp M     &mt RSHFT N &mt RCMD E &mt RALT I &mt RCTRL O &kp SQT
-    &none     &kp Z       &kp X      &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H &kp COMMA  &kp DOT    &kp FSLH    &caps_word
-                                     &none      &lt 1 TAB   &kp SPACE    &kp BSPC  &lt 2 RET   &none
+    ___      &kp Q        &kp W        &kp F       &kp P        &kp B          &kp J       &kp L        &kp U       &kp Y       &kp SEMI     &kp BSLH
+    &kp ESC  &hml LCTRL A &hml LALT R  &hml LCMD S &hsl LSHFT T &kp G          &kp M       &hsr RSHFT N &hmr RCMD E &hmr RALT I &hmr RCTRL O &kp SQT
+    ___      &kp Z        &kp X        &kp C       &hml HYPER D &kp V          &kp K       &hmr HYPER H &kp COMMA   &kp DOT     &kp FSLH     &caps_word
+                                       ___         &lt NUM TAB  &lt SYM SPACE  &kp BSPC    &lt NAV RET  ___
             >;
         };
 
-        symbols_layer {
-            display-name = "symbols";
+        sym_layer {
+            display-name = "sym";
             bindings = <
-    &trans    &kp N1      &kp N2     &kp N3     &kp N4      &kp N5       &kp N6    &kp N7      &kp N8     &kp N9     &kp N0      &trans
-    &kp TILDE &kp EXCL    &kp PLUS   &kp LPAR   &kp RPAR    &kp AMPS     &kp PIPE  &kp MINUS   &kp EQUAL  &kp UNDER  &kp STAR    &trans
-    &trans    &kp DLLR    &kp AT     &kp LBKT   &kp RBKT    &kp HASH     &kp GRAVE &kp LBRC    &kp RBRC   &kp PRCNT  &kp CARET   &trans
-                                     &trans     &trans      &trans       &trans    &trans      &trans
+    ___      &kp TILDE    &kp CARET    &kp AMPS    &kp PIPE     ___            ___         &kp HASH     &kp SEMI    &kp DLLR    &kp BSLH    ___
+    ___      &kp EXCL     &kp PLUS     &kp LPAR    &kp RPAR     ___            ___         &kp MINUS    &kp EQUAL   &kp UNDER   &kp STAR    ___
+    ___      &kp PRCNT    &kp AT       &kp LBRC    &kp RBRC     ___            ___         &kp LBKT     &kp RBKT    &kp DQT     &kp GRAVE   ___
+                                       ___         &lt NUM TAB  ___            &kp BSPC    &lt NAV RET  ___
             >;
         };
 
-        extend_layer {
-            display-name = "extend";
+        nav_layer {
+            display-name = "nav";
             bindings = <
-    &trans    &trans     &kp C_PREV  &kp C_PP   &kp C_NEXT  &trans       &trans    &trans      &kp UP     &trans     &trans      &trans
-    &trans    &trans     &trans      &trans     &trans      &trans       &trans    &kp LEFT    &kp DOWN   &kp RIGHT  &trans      &trans
-    &trans    &trans     &trans      &trans     &trans      &trans       &trans    &trans      &trans     &trans     &trans      &trans
-                                     &trans     &trans      &trans       &trans    &trans      &trans
+    ___      ___          ___          ___         ___          ___            &kp PG_UP   &kp HOME     &kp UP      &kp END     ___         ___
+    ___      &kp LCTRL    &kp LALT     &kp LCMD    &kp LSHFT    ___            &kp PG_DN   &kp LEFT     &kp DOWN    &kp RIGHT   ___         ___
+    ___      ___          ___          ___         ___          ___            ___         ___          ___         ___         ___         ___
+                                       ___         &lt NUM TAB  &lt SYM SPACE  &kp BSPC    ___          ___
             >;
         };
 
-        adjust_layer {
-            display-name = "adjust";
+        num_layer {
+            display-name = "num";
             bindings = <
-    &trans    &kp F1     &kp F2      &kp F3     &kp F4      &kp F5       &kp F6    &kp F7      &kp F8     &kp F9     &kp F10     &trans
-    &trans    &trans     &trans      &trans     &trans      &trans       &trans    &trans      &trans     &trans     &kp F11     &trans
-    &trans    &trans     &trans      &trans     &trans      &trans       &trans    &trans      &trans     &trans     &kp F12     &trans
-                                     &trans     &trans      &trans       &trans    &trans      &trans
+    ___      &kp F9       &kp F10      &kp F11     &kp F12      ___            ___         &kp N7       &kp N8      &kp N9      ___         ___
+    ___      &kp F5       &kp F6       &kp F7      &kp F8       ___            ___         &kp N4       &kp N5      &kp N6      ___         ___
+    ___      &kp F1       &kp F2       &kp F3      &kp F4       ___            ___         &kp N1       &kp N2      &kp N3      ___         ___
+                                       ___         ___          &lt SYM SPACE  &kp BSPC    &lt NAV N0   ___
             >;
         };
 
-        conditional_layers {
-            compatible = "zmk,conditional-layers";
-            tri_layer {
-                if-layers = <1 2>;
-                then-layer = <3>;
-            };
+        sys_layer {
+            display-name = "sys";
+            bindings = <
+    ___      ___          &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP ___            ___         ___          ___         ___         ___         ___
+    ___      ___          &kp C_PREV   &kp C_PP    &kp C_NEXT   ___            ___         ___          ___         ___         ___         ___
+    BT_CLEAR ___          BT_SEL_0     BT_SEL_1    BT_SEL_2     ___            ___         ___          ___         ___         ___         ___
+                                       ___         ___          &lt SYM SPACE  &kp BSPC    ___          ___
+            >;
         };
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NUM NAV>;
+            then-layer = <SYS>;
+        };
+    };
+
+    behaviors {
+        // homerow mods that are NOT the shift key
+        DEFINE_HRM(hml, home_row_mod_left, &kp, &kp, RHS TMB,
+            require-prior-idle-ms = <100>;
+        );
+
+        DEFINE_HRM(hmr, home_row_mod_right, &kp, &kp, LHS TMB,
+            require-prior-idle-ms = <100>;
+        );
+
+        // homerow mods that ARE the shift key
+        DEFINE_HRM(hsl, home_row_mod_for_shift_left, &kp, &kp, RHS TMB);
+        DEFINE_HRM(hsr, home_row_mod_for_shift_right, &kp, &kp, LHS TMB);
+    };
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <175>;
 };

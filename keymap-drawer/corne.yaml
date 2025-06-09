@@ -1,0 +1,217 @@
+layout: {zmk_keyboard: corne}
+layers:
+  base:
+  - {type: none}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - \
+  - $$mdi:keyboard-esc$$
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - ''''
+  - {type: none}
+  - Z
+  - X
+  - C
+  - {t: D, h: ✦}
+  - V
+  - K
+  - {t: H, h: ✦}
+  - ','
+  - .
+  - /
+  - $$mdi:alpha-w-box$$
+  - {type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {type: none}
+  sym:
+  - {type: none}
+  - '~'
+  - ^
+  - '&'
+  - '|'
+  - {type: none}
+  - {type: none}
+  - '#'
+  - ;
+  - $
+  - \
+  - {type: none}
+  - {type: none}
+  - '!'
+  - '['
+  - (
+  - '{'
+  - {type: none}
+  - {type: none}
+  - '-'
+  - '='
+  - _
+  - '*'
+  - {type: none}
+  - {type: none}
+  - '%'
+  - ']'
+  - )
+  - '}'
+  - {type: none}
+  - {type: none}
+  - +
+  - '@'
+  - '"'
+  - '`'
+  - {type: none}
+  - {type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {type: held}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {type: none}
+  nav:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:transfer-up$$
+  - $$mdi:transfer-left$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:transfer-right$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - {type: none}
+  - $$mdi:transfer-down$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {type: held}
+  - {type: none}
+  num:
+  - {type: none}
+  - F9
+  - F10
+  - F11
+  - F12
+  - {type: none}
+  - {type: none}
+  - '7'
+  - '8'
+  - '9'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F5
+  - F6
+  - F7
+  - F8
+  - {type: none}
+  - {type: none}
+  - '4'
+  - '5'
+  - '6'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F1
+  - F2
+  - F3
+  - F4
+  - {type: none}
+  - {type: none}
+  - '1'
+  - '2'
+  - '3'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '0', h: nav}
+  - {type: none}
+  sys:
+  - {type: none}
+  - {type: none}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:bluetooth-off$$
+  - {type: none}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {type: held}
+  - {type: none}
