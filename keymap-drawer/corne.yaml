@@ -58,9 +58,9 @@ layers:
   - {type: none}
   - {type: none}
   - '!'
-  - '['
+  - +
   - (
-  - '{'
+  - )
   - {type: none}
   - {type: none}
   - '-'
@@ -70,13 +70,13 @@ layers:
   - {type: none}
   - {type: none}
   - '%'
-  - ']'
-  - )
+  - '@'
+  - '{'
   - '}'
   - {type: none}
   - {type: none}
-  - +
-  - '@'
+  - '['
+  - ']'
   - '"'
   - '`'
   - {type: none}
