@@ -54,6 +54,7 @@ parse_config:
     BSLH: '\'
     PIPE: "|"
     SEMI: ";"
+    COLON: ":"
     SQT: "'"
     DQT: '"'
     COMMA: ","
