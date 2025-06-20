@@ -59,9 +59,9 @@
         sym_layer {
             display-name = "sym";
             bindings = <
-    ___      &kp TILDE    &kp CARET    &kp AMPS    &kp PIPE     ___            ___         &kp DQT      &kp HASH    &kp DLLR    &kp COLON   ___
+    ___      &kp TILDE    &kp CARET    &kp AMPS    &kp PIPE     ___            ___         &kp DQT      &kp AT      &kp DLLR    &kp COLON   ___
     ___      &kp EXCL     &kp PLUS     &kp LPAR    &kp RPAR     ___            ___         &kp MINUS    &kp EQUAL   &kp UNDER   &kp STAR    ___
-    ___      &kp PRCNT    &kp AT       &kp LBRC    &kp RBRC     ___            ___         &kp LBKT     &kp RBKT    &kp GRAVE   &kp BSLH    ___
+    ___      &kp PRCNT    &kp HASH     &kp LBRC    &kp RBRC     ___            ___         &kp LBKT     &kp RBKT    &kp GRAVE   &kp BSLH    ___
                                        ___         &lt NUM TAB  ___            &kp BSPC    &lt NAV RET  ___
             >;
         };
