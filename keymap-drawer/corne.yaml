@@ -81,7 +81,7 @@ layers:
   - \
   - {type: none}
   - {type: none}
-  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {type: none}
   - {type: held}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: nav}
@@ -124,9 +124,9 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {t: '$$mdi:keyboard-tab$$', h: sys}
   - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {type: none}
   - {type: held}
   - {type: none}
   num:
@@ -168,9 +168,9 @@ layers:
   - {type: none}
   - {type: none}
   - {type: held}
-  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {t: '$$mdi:keyboard-return$$', h: sys}
   - {type: none}
   sys:
   - {type: none}
@@ -211,7 +211,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: held}
-  - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {type: none}
+  - {type: none}
   - {type: held}
   - {type: none}
