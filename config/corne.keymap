@@ -118,10 +118,10 @@
         // homerow mods that ARE the shift key
         DEFINE_HRM(hsl, home_row_mod_for_shift_left, &kp, &kp, RHS TMB);
         DEFINE_HRM(hsr, home_row_mod_for_shift_right, &kp, &kp, LHS TMB);
-    };
-};
 
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <175>;
+        &lt {
+            flavor = "balanced";
+            tapping-term-ms = <175>;
+        };
+    };
 };
