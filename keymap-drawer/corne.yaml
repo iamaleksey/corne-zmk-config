@@ -93,11 +93,11 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {type: none}
+  - $$mdi:transfer-down$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:transfer-up$$
   - $$mdi:transfer-left$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:transfer-right$$
-  - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-control$$
@@ -105,11 +105,11 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
-  - $$mdi:transfer-down$$
+  - {type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {type: none}
+  - $$mdi:transfer-right$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -131,30 +131,6 @@ layers:
   - {type: none}
   num:
   - {type: none}
-  - F9
-  - F10
-  - F11
-  - F12
-  - {type: none}
-  - {type: none}
-  - '7'
-  - '8'
-  - '9'
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - F5
-  - F6
-  - F7
-  - F8
-  - {type: none}
-  - {type: none}
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - {type: none}
-  - {type: none}
   - F1
   - F2
   - F3
@@ -164,6 +140,30 @@ layers:
   - '1'
   - '2'
   - '3'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F5
+  - F6
+  - F7
+  - F8
+  - {type: none}
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F9
+  - F10
+  - F11
+  - F12
+  - {type: none}
+  - {type: none}
+  - '7'
+  - '8'
+  - '9'
   - {type: none}
   - {type: none}
   - {type: none}
