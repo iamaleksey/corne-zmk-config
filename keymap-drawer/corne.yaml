@@ -51,13 +51,13 @@ layers:
   - '|'
   - {type: none}
   - {type: none}
-  - '"'
+  - _
   - '@'
   - $
   - ':'
   - {type: none}
   - {type: none}
-  - '!'
+  - '*'
   - +
   - (
   - )
@@ -65,8 +65,8 @@ layers:
   - {type: none}
   - '-'
   - '='
-  - _
-  - '*'
+  - '!'
+  - '"'
   - {type: none}
   - {type: none}
   - '%'
