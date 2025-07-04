@@ -52,25 +52,25 @@ layers:
   - {type: none}
   - {type: none}
   - _
-  - '@'
+  - '!'
   - $
   - ':'
   - {type: none}
   - {type: none}
+  - '@'
   - '*'
-  - +
   - (
   - )
   - {type: none}
   - {type: none}
   - '-'
   - '='
-  - '!'
+  - +
   - '"'
   - {type: none}
   - {type: none}
-  - '%'
   - '#'
+  - '%'
   - '{'
   - '}'
   - {type: none}
