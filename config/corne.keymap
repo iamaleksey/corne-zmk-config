@@ -74,9 +74,9 @@
         sym_layer {
             display-name = "sym";
             bindings = <
-    ___      &kp TILDE &kp CARET    &kp AMPS   &kp PIPE     ___          ___      &kp UNDER &kp AT    &kp DLLR  &kp COLON ___
-    ___      &kp STAR  &kp PLUS     &kp LPAR   &kp RPAR     ___          ___      &kp MINUS &kp EQUAL &kp EXCL  &kp DQT   ___
-    ___      &kp PRCNT &kp HASH     &kp LBRC   &kp RBRC     ___          ___      &kp LBKT  &kp RBKT  &kp GRAVE &kp BSLH  ___
+    ___      &kp TILDE &kp CARET    &kp AMPS   &kp PIPE     ___          ___      &kp UNDER &kp EXCL  &kp DLLR  &kp COLON ___
+    ___      &kp AT    &kp STAR     &kp LPAR   &kp RPAR     ___          ___      &kp MINUS &kp EQUAL &kp PLUS  &kp DQT   ___
+    ___      &kp HASH  &kp PRCNT    &kp LBRC   &kp RBRC     ___          ___      &kp LBKT  &kp RBKT  &kp GRAVE &kp BSLH  ___
                                     ___        ___          ___          &kp BSPC NAV_RET   ___
             >;
         };
