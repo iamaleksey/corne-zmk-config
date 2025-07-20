@@ -83,7 +83,7 @@
             display-name = "base";
             bindings = <
     ___ &kp Q     &kp W        &kp F      &kp P        &kp B        &kp J     &kp L        &kp U     &kp Y        &kp SEMI  ___
-    ___ LCTRL_A   LALT_R       LCMD_S     LSHFT_T      &kp G        &kp M     RSHFT_N      RCMD_E    RALT_I       RCTRL_O   &kp SQT
+    ___ LCTRL_A   LALT_R       LCMD_S     LSHFT_T      &kp G        &kp M     RSHFT_N      RCMD_E    RALT_I       RCTRL_O   ___
     ___ &kp Z     &kp X        &kp C      HYPER_D      &kp V        &kp K     HYPER_H      &kp COMMA &kp DOT      &kp FSLH  ___
                                ___        NUM_TAB      SYM_SPACE    &kp BSPC  NAV_RET      ___
             >;
@@ -93,7 +93,7 @@
             display-name = "sym";
             bindings = <
     ___ &kp TILDE &kp CARET    &kp AMPS   &kp PIPE     ___          ___       &kp UNDER    &kp EXCL  &kp DLLR     &kp COLON ___
-    ___ &kp AT    &kp STAR     &kp LPAR   &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL &kp PLUS     &kp DQT   ___
+    ___ &kp AT    &kp SQT      &kp LPAR   &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL &kp PLUS     &kp STAR  ___
     ___ &kp HASH  &kp PRCNT    &kp LBRC   &kp RBRC     ___          ___       &kp LBKT     &kp RBKT  &kp GRAVE    &kp BSLH  ___
                                ___        ___          ___          &kp BSPC  NAV_RET      ___
             >;
