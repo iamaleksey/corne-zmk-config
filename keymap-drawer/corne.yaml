@@ -12,8 +12,8 @@ layers:
   - U
   - Y
   - ;
-  - \
-  - $$mdi:keyboard-esc$$
+  - {type: none}
+  - {type: none}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
@@ -24,7 +24,7 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
-  - ''''
+  - {type: none}
   - {type: none}
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - $$mdi:alpha-w-box$$
+  - {type: none}
   - {type: none}
   - {t: '$$mdi:keyboard-tab$$', h: num}
   - {t: '$$mdi:keyboard-space$$', h: sym}
@@ -58,7 +58,7 @@ layers:
   - {type: none}
   - {type: none}
   - '@'
-  - '*'
+  - ''''
   - (
   - )
   - {type: none}
@@ -66,7 +66,7 @@ layers:
   - '-'
   - '='
   - +
-  - '"'
+  - '*'
   - {type: none}
   - {type: none}
   - '#'
@@ -93,11 +93,11 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
   - $$mdi:transfer-up$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:transfer-down$$
   - $$mdi:transfer-left$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:transfer-right$$
+  - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-control$$
@@ -105,11 +105,11 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
-  - {type: none}
+  - $$mdi:transfer-down$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:transfer-right$$
+  - DEL
   - {type: none}
   - {type: none}
   - {type: none}
@@ -173,7 +173,6 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: sys}
   - {type: none}
   sys:
-  - {h: '$$mdi:transfer-left$$', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -185,7 +184,8 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {h: '$$mdi:transfer-right$$', s: '$$mdi:bluetooth-connect$$'}
+  - {type: none}
+  - {type: none}
   - {type: none}
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
@@ -197,16 +197,16 @@ layers:
   - $$mdi:skip-next$$
   - {type: none}
   - {type: none}
+  - {type: none}
   - $$mdi:bluetooth-off$$
+  - {h: '$$mdi:transfer-left$$', s: '$$mdi:bluetooth-connect$$'}
+  - {type: none}
+  - {h: '$$mdi:transfer-right$$', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
   - {type: none}
+  - BRI DN
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - BRI UP
   - {type: none}
   - {type: none}
   - {type: none}
@@ -215,3 +215,8 @@ layers:
   - {type: none}
   - {type: held}
   - {type: none}
+combos:
+- p: [13, 22]
+  k: $$mdi:keyboard-esc$$
+- p: [25, 34]
+  k: $$mdi:alpha-w-box$$
