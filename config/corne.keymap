@@ -3,17 +3,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 /*
- *  ╭────────────────────┬────────────────────╮
- *  │  0   1   2   3   4 │  5   6   7   8   9 │
- *  │ 10  11  12  13  14 │ 15  16  17  18  19 │
- *  │ 20  21  22  23  24 │ 25  26  27  28  29 │
- *  ╰───────╮ 30  31  32 │ 33  34  35 ╭───────╯
- *          ╰────────────┴────────────╯
+ *  ╭────────────────────────┬────────────────────────╮
+ *  │  0   1   2   3   4   5 │  6   7   8   9  10  11 │
+ *  │ 12  13  14  15  16  17 │ 18  19  20  21  22  23 │
+ *  │ 24  25  26  27  28  29 │ 30  31  32  33  34  35 │
+ *  ╰───────────╮ 36  37  38 │ 39  40  41 ╭───────────╯
+ *              ╰────────────┴────────────╯
  */
 
-#define LHS 0  1  2  3  4    10 11 12 13 14    20 21 22 23 24
-#define RHS 5  6  7  8  9    15 16 17 18 19    25 26 27 28 29
-#define TMB 30 31 32         33 34 35
+#define LHS 0  1  2  3  4  5   12 13 14 15 16 17  24 25 26 27 28 29
+#define RHS 6  7  8  9  10 11  18 19 20 21 22 23  30 31 32 33 34 35
+#define TMB 36 37 38 39 40 41
 
 #define DEFINE_HRM(_label, _name, _hold, _tap, _triggers, ...)  \
     _label: _name {                                             \
@@ -57,82 +57,75 @@
 
 #define BT_CLEAR &bt BT_CLR
 
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <175>;
-};
-
 / {
-    chosen {
-        zmk,physical-layout = &foostan_corne_5col_layout;
-    };
-
     combos {
         compatible = "zmk,combos";
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <10 19>;
+            key-positions = <13 22>;
             bindings = <&kp ESC>;
         };
 
         combo_caps_word {
             timeout-ms = <50>;
-            key-positions = <20 29>;
+            key-positions = <25 34>;
             bindings = <&caps_word>;
         };
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             display-name = "base";
             bindings = <
-    &kp Q     &kp W        &kp F      &kp P        &kp B        &kp J     &kp L        &kp U     &kp Y        &kp SEMI
-    LCTRL_A   LALT_R       LCMD_S     LSHFT_T      &kp G        &kp M     RSHFT_N      RCMD_E    RALT_I       RCTRL_O
-    &kp Z     &kp X        &kp C      HYPER_D      &kp V        &kp K     HYPER_H      &kp COMMA &kp DOT      &kp FSLH
-                           ___        NUM_TAB      SYM_SPACE    &kp BSPC  NAV_RET      ___
+    ___ &kp Q     &kp W        &kp F      &kp P        &kp B        &kp J     &kp L        &kp U     &kp Y        &kp SEMI  ___
+    ___ LCTRL_A   LALT_R       LCMD_S     LSHFT_T      &kp G        &kp M     RSHFT_N      RCMD_E    RALT_I       RCTRL_O   ___
+    ___ &kp Z     &kp X        &kp C      HYPER_D      &kp V        &kp K     HYPER_H      &kp COMMA &kp DOT      &kp FSLH  ___
+                               ___        NUM_TAB      SYM_SPACE    &kp BSPC  NAV_RET      ___
             >;
         };
 
         sym_layer {
             display-name = "sym";
             bindings = <
-    &kp TILDE &kp CARET    &kp AMPS   &kp PIPE     ___          ___       &kp UNDER    &kp EXCL  &kp DLLR     &kp COLON
-    &kp AT    &kp SQT      &kp LPAR   &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL &kp PLUS     &kp STAR
-    &kp HASH  &kp PRCNT    &kp LBRC   &kp RBRC     ___          ___       &kp LBKT     &kp RBKT  &kp GRAVE    &kp BSLH
-                           ___        ___          ___          &kp BSPC  NAV_RET      ___
+    ___ &kp TILDE &kp CARET    &kp AMPS   &kp PIPE     ___          ___       &kp UNDER    &kp EXCL  &kp DLLR     &kp COLON ___
+    ___ &kp AT    &kp SQT      &kp LPAR   &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL &kp PLUS     &kp STAR  ___
+    ___ &kp HASH  &kp PRCNT    &kp LBRC   &kp RBRC     ___          ___       &kp LBKT     &kp RBKT  &kp GRAVE    &kp BSLH  ___
+                               ___        ___          ___          &kp BSPC  NAV_RET      ___
             >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-    ___       ___          ___        ___          ___          &kp PG_UP &kp HOME     &kp UP    &kp END      ___
-    &kp LCTRL &kp LALT     &kp LCMD   &kp LSHFT    ___          &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT    &kp DEL
-    ___       ___          ___        ___          ___          ___       ___          ___       ___          ___
-                           ___        SYS_TAB      SYM_SPACE    ___       ___          ___
+    ___ ___       ___          ___        ___          ___          &kp PG_UP &kp HOME     &kp UP    &kp END      ___       ___
+    ___ &kp LCTRL &kp LALT     &kp LCMD   &kp LSHFT    ___          &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT    &kp DEL   ___
+    ___ ___       ___          ___        ___          ___          ___       ___          ___       ___          ___       ___
+                               ___        SYS_TAB      SYM_SPACE    ___       ___          ___
             >;
         };
 
         num_layer {
             display-name = "num";
             bindings = <
-    &kp F1    &kp F2       &kp F3     &kp F4       ___          ___       &kp N1       &kp N2    &kp N3       ___
-    &kp F5    &kp F6       &kp F7     &kp F8       ___          ___       &kp N4       &kp N5    &kp N6       &kp N0
-    &kp F9    &kp F10      &kp F11    &kp F12      ___          ___       &kp N7       &kp N8    &kp N9       ___
-                           ___        ___          ___          &kp BSPC  SYS_RET      ___
+    ___ &kp F1    &kp F2       &kp F3     &kp F4       ___          ___       &kp N1       &kp N2    &kp N3       ___       ___
+    ___ &kp F5    &kp F6       &kp F7     &kp F8       ___          ___       &kp N4       &kp N5    &kp N6       &kp N0    ___
+    ___ &kp F9    &kp F10      &kp F11    &kp F12      ___          ___       &kp N7       &kp N8    &kp N9       ___       ___
+                               ___        ___          ___          &kp BSPC  SYS_RET      ___
             >;
         };
 
         sys_layer {
             display-name = "sys";
             bindings = <
-    ___       ___          ___        ___          ___          ___       ___          ___       ___          ___
-    ___       &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP ___          ___       &kp C_PREV   &kp C_PP  &kp C_NEXT   ___
-    BT_CLEAR  &bt BT_PRV   ___        &bt BT_NXT   ___          ___       &kp C_BRI_DN ___       &kp C_BRI_UP ___
-                           ___        ___          ___          ___       ___          ___
+    ___ ___       ___          ___        ___          ___          ___       ___          ___       ___          ___       ___
+    ___ ___       &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP ___          ___       &kp C_PREV   &kp C_PP  &kp C_NEXT   ___       ___
+    ___ BT_CLEAR  &bt BT_PRV   ___        &bt BT_NXT   ___          ___       &kp C_BRI_DN ___       &kp C_BRI_UP ___       ___
+                               ___        ___          ___          ___       ___          ___
             >;
         };
     };
@@ -151,4 +144,9 @@
         DEFINE_HRM(hsl, home_row_mod_for_shift_left, &kp, &kp, RHS TMB);
         DEFINE_HRM(hsr, home_row_mod_for_shift_right, &kp, &kp, LHS TMB);
     };
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <175>;
 };
