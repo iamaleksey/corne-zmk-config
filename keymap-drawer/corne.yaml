@@ -40,7 +40,7 @@ layers:
   - {type: none}
   - {t: '$$mdi:keyboard-tab$$', h: num}
   - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-outline$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
   - {type: none}
   sym:
@@ -83,7 +83,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: held}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-outline$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
   - {type: none}
   nav:
@@ -109,7 +109,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - DEL
+  - $$mdi:backspace-reverse-outline$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -169,7 +169,7 @@ layers:
   - {type: none}
   - {type: held}
   - {type: none}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-outline$$
   - {t: '$$mdi:keyboard-return$$', h: sys}
   - {type: none}
   sys:
@@ -199,14 +199,14 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:bluetooth-off$$
-  - {h: '$$mdi:transfer-left$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:chevron-double-left$$', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
-  - {h: '$$mdi:transfer-right$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:chevron-double-right$$', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
   - {type: none}
-  - BRI DN
+  - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:minus$$'}
   - {type: none}
-  - BRI UP
+  - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:plus$$'}
   - {type: none}
   - {type: none}
   - {type: none}
