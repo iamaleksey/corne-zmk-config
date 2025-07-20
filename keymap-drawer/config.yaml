@@ -19,11 +19,11 @@ parse_config:
     "&bt BT_PRV":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
-      hold: $$mdi:transfer-left$$
+      hold: $$mdi:chevron-double-left$$
     "&bt BT_NXT":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
-      hold: $$mdi:transfer-right$$
+      hold: $$mdi:chevron-double-right$$
 
   zmk_keycode_map:
     # Symbols
@@ -68,15 +68,12 @@ parse_config:
     END: $$mdi:transfer-right$$
 
     # Whitespace
-    RET:
-      type: enter
-      tap: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     SPACE: $$mdi:keyboard-space$$
-    BSPC:
-      type: backspace
-      tap: $$mdi:backspace$$
+    BSPC: $$mdi:backspace-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
 
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
@@ -92,6 +89,12 @@ parse_config:
     C_PP: $$mdi:play-pause$$
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
+    C_BRI_UP:
+      tap: $$mdi:lightbulb-on-outline$$
+      hold: $$mdi:plus$$
+    C_BRI_DN:
+      tap: $$mdi:lightbulb-on-outline$$
+      hold: $$mdi:minus$$
 
     # Volume
     C_MUTE: $$mdi:volume-off$$
@@ -104,3 +107,5 @@ parse_config:
 
 draw_config:
   append_colon_to_layer_header: false
+  separate_combo_diagrams: true
+  combo_diagrams_scale: 2
