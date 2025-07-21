@@ -41,9 +41,9 @@
 #define LALT_R  &hml LALT  R
 #define LCMD_S  &hml LCMD  S
 #define LSHFT_T &hsl LSHFT T
-#define HYPER_D &hml HYPER D
+#define HYPER_G &hml HYPER G
 
-#define HYPER_H &hmr HYPER H
+#define HYPER_M &hmr HYPER M
 #define RSHFT_N &hsr RSHFT N
 #define RCMD_E  &hmr RCMD  E
 #define RALT_I  &hmr RALT  I
@@ -81,8 +81,8 @@
             display-name = "base";
             bindings = <
     ___ &kp Q     &kp W        &kp F      &kp P        &kp B        &kp J     &kp L        &kp U     &kp Y        &kp SEMI ___
-    ___ LCTRL_A   LALT_R       LCMD_S     LSHFT_T      &kp G        &kp M     RSHFT_N      RCMD_E    RALT_I       RCTRL_O  ___
-    ___ &kp Z     &kp X        &kp C      HYPER_D      &kp V        &kp K     HYPER_H      &kp COMMA &kp DOT      &kp FSLH ___
+    ___ LCTRL_A   LALT_R       LCMD_S     LSHFT_T      HYPER_G      HYPER_M   RSHFT_N      RCMD_E    RALT_I       RCTRL_O  ___
+    ___ &kp Z     &kp X        &kp C      &kp D        &kp V        &kp K     &kp H        &kp COMMA &kp DOT      &kp FSLH ___
                                ___        NUM_TAB      SYM_SPACE    &kp BSPC  NAV_RET      ___
             >;
         };

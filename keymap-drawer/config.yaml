@@ -6,11 +6,11 @@ parse_config:
       tap: ""
       type: none
 
-    "&hml LS(LA(LC(LCMD))) D":
-      tap: D
+    "&hml LS(LA(LC(LCMD))) G":
+      tap: G
       hold: "✦" # Hyper
-    "&hmr LS(LA(LC(LCMD))) H":
-      tap: H
+    "&hmr LS(LA(LC(LCMD))) M":
+      tap: M
       hold: "✦" # Hyper
 
     "&caps_word": $$mdi:alpha-w-box$$
