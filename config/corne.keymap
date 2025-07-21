@@ -91,7 +91,7 @@
             display-name = "sym";
             bindings = <
     ___ &kp TILDE &kp CARET    &kp AMPS   &kp PIPE     ___          ___       &kp UNDER    &kp EXCL  &kp DLLR     &kp AT   ___
-    ___ &kp SQT   &kp DQT      &kp LPAR   &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL &kp PLUS     &kp STAR ___
+    ___ &kp STAR  &kp PLUS     &kp LPAR   &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL &kp DQT      &kp SQT  ___
     ___ &kp HASH  &kp PRCNT    &kp LBRC   &kp RBRC     ___          ___       &kp LBKT     &kp RBKT  &kp GRAVE    &kp BSLH ___
                                ___        ___          ___          &kp BSPC  NAV_RET      ___
             >;
