@@ -54,11 +54,11 @@ layers:
   - _
   - '!'
   - $
-  - ':'
-  - {type: none}
-  - {type: none}
   - '@'
+  - {type: none}
+  - {type: none}
   - ''''
+  - '"'
   - (
   - )
   - {type: none}
