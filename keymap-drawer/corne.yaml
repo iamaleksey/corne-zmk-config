@@ -219,6 +219,10 @@ combos:
 - p: [13, 22]
   k: $$mdi:keyboard-esc$$
   l: [base]
+  a: top
+  o: 2.0
 - p: [17, 18]
   k: $$mdi:alpha-w-box$$
   l: [base]
+  a: top
+  o: 1.0
