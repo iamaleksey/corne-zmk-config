@@ -29,10 +29,10 @@ layers:
   - Z
   - X
   - C
-  - {t: D, h: ✦}
+  - {t: D, h: '$$mdi:rocket$$'}
   - V
   - K
-  - {t: H, h: ✦}
+  - {t: H, h: '$$mdi:rocket$$'}
   - ','
   - .
   - /
