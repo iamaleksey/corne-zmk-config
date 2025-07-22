@@ -107,5 +107,3 @@ parse_config:
 
 draw_config:
   append_colon_to_layer_header: false
-  separate_combo_diagrams: true
-  combo_diagrams_scale: 2
