@@ -105,5 +105,9 @@ parse_config:
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
 
+  zmk_combos:
+    combo_esc:       { align: top, o: 2.00 }
+    combo_caps_word: { align: top, o: 1.00 }
+
 draw_config:
   append_colon_to_layer_header: false
