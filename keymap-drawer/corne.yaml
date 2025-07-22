@@ -18,8 +18,8 @@ layers:
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: ✦}
-  - {t: M, h: ✦}
+  - G
+  - M
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
@@ -29,10 +29,10 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, h: ✦}
   - V
   - K
-  - H
+  - {t: H, h: ✦}
   - ','
   - .
   - /
