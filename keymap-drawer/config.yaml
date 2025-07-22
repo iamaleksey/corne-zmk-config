@@ -8,10 +8,10 @@ parse_config:
 
     "&hml LS(LA(LC(LCMD))) D":
       tap: D
-      hold: "✦" # Hyper
+      hold: $$mdi:rocket$$ # Hyper
     "&hmr LS(LA(LC(LCMD))) H":
       tap: H
-      hold: "✦" # Hyper
+      hold: $$mdi:rocket$$ # Hyper
 
     "&caps_word": $$mdi:alpha-w-box$$
 
