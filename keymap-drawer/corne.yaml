@@ -216,7 +216,7 @@ layers:
   - {type: held}
   - {type: none}
 combos:
-- p: [17, 18]
+- p: [16, 19]
   k: $$mdi:keyboard-esc$$
   l: [base]
 - p: [13, 22]
