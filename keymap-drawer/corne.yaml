@@ -115,7 +115,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:rocket$$
   - {type: none}
   - {type: none}
   - $$mdi:skip-previous$$
