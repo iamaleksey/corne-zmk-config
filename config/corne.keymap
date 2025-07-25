@@ -106,7 +106,7 @@
             bindings = <
     ___ ___       ___          ___        ___          ___          &kp PG_UP &kp HOME     &kp UP    &kp END      ___      ___
     ___ &kp LCTRL &kp LALT     &kp LCMD   &kp LSHFT    ___          &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT    &kp DEL  ___
-    ___ ___       ___          ___        ___          ___          ___       ___          ___       ___          ___      ___
+    ___ ___       ___          ___        ___          ___          ___       &kp C_PREV   &kp C_PP  &kp C_NEXT   ___      ___
                                ___        SYS_TAB      SYM_SPACE    ___       ___          ___
             >;
         };
@@ -125,7 +125,7 @@
             display-name = "sys";
             bindings = <
     ___ ___       &bt BT_PRV   BT_CLEAR   &bt BT_NXT   ___          ___       &kp C_BRI_DN ___       &kp C_BRI_UP ___      ___
-    ___ ___       &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP ___          ___       &kp C_PREV   &kp C_PP  &kp C_NEXT   ___      ___
+    ___ ___       &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP ___          ___       ___          ___       ___          ___      ___
     ___ ___       ___          ___        ___          ___          ___       ___          ___       ___          ___      ___
                                ___        ___          ___          ___       ___          ___
             >;
