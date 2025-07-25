@@ -88,10 +88,10 @@ layers:
   - {type: none}
   nav:
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:minus$$'}
+  - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:plus$$'}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - {type: none}
   - $$mdi:transfer-up$$
   - $$mdi:transfer-left$$
@@ -112,8 +112,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
+  - {h: '$$mdi:chevron-double-left$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:chevron-double-right$$', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
   - $$mdi:rocket$$
   - {type: none}
@@ -124,7 +124,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: '$$mdi:keyboard-tab$$', h: sys}
+  - {t: '$$mdi:keyboard-tab$$', h: num}
   - {t: '$$mdi:keyboard-space$$', h: sym}
   - {type: none}
   - {type: held}
@@ -170,50 +170,7 @@ layers:
   - {type: held}
   - {type: none}
   - $$mdi:backspace-outline$$
-  - {t: '$$mdi:keyboard-return$$', h: sys}
-  - {type: none}
-  sys:
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:minus$$'}
-  - {type: none}
-  - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:plus$$'}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {h: '$$mdi:chevron-double-left$$', s: '$$mdi:bluetooth-connect$$'}
-  - {type: none}
-  - {h: '$$mdi:chevron-double-right$$', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:bluetooth-off$$
-  - {type: none}
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  - {type: held}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
   - {type: none}
 combos:
 - p: [16, 19]
@@ -224,3 +181,9 @@ combos:
   l: [base]
   a: top
   o: 0.25
+- p: [3, 4]
+  k: $$mdi:volume-off$$
+  l: [nav]
+- p: [3, 4]
+  k: $$mdi:bluetooth-off$$
+  l: [nav]
