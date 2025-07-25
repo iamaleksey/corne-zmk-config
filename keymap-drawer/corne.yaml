@@ -184,6 +184,6 @@ combos:
 - p: [3, 4]
   k: $$mdi:volume-off$$
   l: [nav]
-- p: [3, 4]
+- p: [25, 26]
   k: $$mdi:bluetooth-off$$
   l: [nav]

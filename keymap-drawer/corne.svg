@@ -744,8 +744,8 @@ path.combo {
 <use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="217" y="24" height="14" width="14.0" class="combo tap glyph mdi:volume-off"/>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="217" y="24" height="14" width="14.0" class="combo tap glyph mdi:bluetooth-off"/>
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="105" y="147" height="14" width="14.0" class="combo tap glyph mdi:bluetooth-off"/>
 </g>
 </g>
 </g>
