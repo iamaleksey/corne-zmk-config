@@ -13,6 +13,8 @@ parse_config:
       tap: H
       hold: $$mdi:rocket$$ # Hyper
 
+    "&kp LS(LA(LC(LCMD)))": $$mdi:rocket$$ # Hyper
+
     "&caps_word": $$mdi:alpha-w-box$$
 
     # Bluetooth
