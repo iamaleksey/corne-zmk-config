@@ -118,9 +118,9 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -175,9 +175,9 @@ layers:
   sys:
   - {type: none}
   - {type: none}
-  - {h: '$$mdi:chevron-double-left$$', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:bluetooth-off$$
-  - {h: '$$mdi:chevron-double-right$$', s: '$$mdi:bluetooth-connect$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {type: none}
   - {t: '$$mdi:lightbulb-on-outline$$', h: '$$mdi:minus$$'}
@@ -187,14 +187,16 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
   - $$mdi:volume-high$$
   - {type: none}
   - {type: none}
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -202,12 +204,10 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {h: '$$mdi:chevron-double-left$$', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - {h: '$$mdi:chevron-double-right$$', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
   - {type: none}
   - {type: none}
   - {type: held}
