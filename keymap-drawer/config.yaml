@@ -108,7 +108,6 @@ parse_config:
     BT_SEL: $$mdi:bluetooth-connect$$
 
   zmk_combos:
-    combo_esc:       { align: bottom, offset: 0.25 }
     combo_caps_word: { align: top,    offset: 0.25 }
 
 draw_config:
