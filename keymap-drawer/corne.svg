@@ -405,10 +405,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g class="combo combopos-0">
-<path d="M420,134 h-162 a6.0,6.0 0 0 1 -6.0,-6.0 v-18" class="combo"/>
-<path d="M420,134 h162 a6.0,6.0 0 0 0 6.0,-6.0 v-18" class="combo"/>
-<rect rx="6" ry="6" x="406" y="121" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="413" y="127" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
+<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="161" y="24" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-1">
 <path d="M420,62 h-330 a6.0,6.0 0 0 0 -6.0,6.0 v18" class="combo"/>
