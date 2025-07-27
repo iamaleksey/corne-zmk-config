@@ -176,6 +176,9 @@ combos:
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
   l: [base]
+- p: [32, 33]
+  k: $$mdi:keyboard-return$$
+  l: [base]
 - p: [13, 22]
   k: $$mdi:alpha-w-box$$
   l: [base]
