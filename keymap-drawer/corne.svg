@@ -421,10 +421,10 @@ path.combo {
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="665" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-return"/>
 </g>
 <g class="combo combopos-4">
-<path d="M420,62 h-330 a6.0,6.0 0 0 0 -6.0,6.0 v18" class="combo"/>
-<path d="M420,62 h330 a6.0,6.0 0 0 1 6.0,6.0 v18" class="combo"/>
-<rect rx="6" ry="6" x="406" y="49" width="28" height="26" class="combo"/>
-<use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="413" y="55" height="14" width="14.0" class="combo tap glyph mdi:alpha-w-box"/>
+<path d="M420,98 l-93,0" class="combo"/>
+<path d="M420,98 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="413" y="91" height="14" width="14.0" class="combo tap glyph mdi:alpha-w-box"/>
 </g>
 </g>
 </g>

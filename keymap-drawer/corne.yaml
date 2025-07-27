@@ -185,11 +185,9 @@ combos:
 - p: [32, 33]
   k: $$mdi:keyboard-return$$
   l: [base]
-- p: [13, 22]
+- p: [17, 18]
   k: $$mdi:alpha-w-box$$
   l: [base]
-  a: top
-  o: 0.25
 - p: [3, 4]
   k: $$mdi:volume-off$$
   l: [nav]
