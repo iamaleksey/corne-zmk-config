@@ -43,6 +43,49 @@ layers:
   - $$mdi:backspace-outline$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
   - {type: none}
+  num:
+  - {type: none}
+  - F1
+  - F2
+  - F3
+  - F4
+  - {type: none}
+  - {type: none}
+  - '1'
+  - '2'
+  - '3'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F5
+  - F6
+  - F7
+  - F8
+  - {type: none}
+  - {type: none}
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - {type: none}
+  - {type: none}
+  - F9
+  - F10
+  - F11
+  - F12
+  - {type: none}
+  - {type: none}
+  - '7'
+  - '8'
+  - '9'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - $$mdi:backspace-outline$$
+  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {type: none}
   sym:
   - {type: none}
   - '~'
@@ -128,49 +171,6 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: sym}
   - {type: none}
   - {type: held}
-  - {type: none}
-  num:
-  - {type: none}
-  - F1
-  - F2
-  - F3
-  - F4
-  - {type: none}
-  - {type: none}
-  - '1'
-  - '2'
-  - '3'
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - F5
-  - F6
-  - F7
-  - F8
-  - {type: none}
-  - {type: none}
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - {type: none}
-  - {type: none}
-  - F9
-  - F10
-  - F11
-  - F12
-  - {type: none}
-  - {type: none}
-  - '7'
-  - '8'
-  - '9'
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - $$mdi:backspace-outline$$
-  - {t: '$$mdi:keyboard-return$$', h: nav}
   - {type: none}
 combos:
 - p: [16, 19]
