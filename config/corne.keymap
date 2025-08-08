@@ -116,7 +116,7 @@
     ___ &kp Q        &kp W        &kp F        &kp P        &kp B        &kp J     &kp L        &kp U      &kp Y        &kp SEMI ___
     ___ LCTRL_A      LALT_R       LCMD_S       LSHFT_T      &kp G        &kp M     RSHFT_N      RCMD_E     RALT_I       RCTRL_O  ___
     ___ &kp Z        &kp X        &kp C        HYPER_D      &kp V        &kp K     HYPER_H      &kp COMMA  &kp DOT      &kp FSLH ___
-                                  ___          NUM_TAB      SYM_SPACE    &kp BSPC  NAV_RET      ___
+                                  ___          NUM_TAB      SYM_SPACE    SYM_SPACE NAV_RET      ___
             >;
         };
 
@@ -126,7 +126,7 @@
     ___ &kp F1       &kp F2       &kp F3       &kp F4       ___          ___       &kp N1       &kp N2     &kp N3       ___      ___
     ___ &kp F5       &kp F6       &kp F7       &kp F8       ___          ___       &kp N4       &kp N5     &kp N6       &kp N0   ___
     ___ &kp F9       &kp F10      &kp F11      &kp F12      ___          ___       &kp N7       &kp N8     &kp N9       ___      ___
-                                  ___          ___          ___          &kp BSPC  NAV_RET      ___
+                                  ___          ___          ___          SYM_SPACE NAV_RET      ___
             >;
         };
 
@@ -136,15 +136,15 @@
     ___ &kp TILDE    &kp CARET    &kp AMPS     &kp PIPE     ___          ___       &kp UNDER    &kp EXCL   &kp DLLR     &kp AT   ___
     ___ &kp STAR     &kp PLUS     &kp LPAR     &kp RPAR     ___          ___       &kp MINUS    &kp EQUAL  &kp DQT      &kp SQT  ___
     ___ &kp HASH     &kp PRCNT    &kp LBRC     &kp RBRC     ___          ___       &kp LBKT     &kp RBKT   &kp GRAVE    &kp BSLH ___
-                                  ___          ___          ___          &kp BSPC  NAV_RET      ___
+                                  ___          ___          ___          ___       NAV_RET      ___
             >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-    ___ &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP ___          &kp PG_UP &kp HOME     &kp UP     &kp END      ___      ___
-    ___ &kp LCTRL    &kp LALT     &kp LCMD     &kp LSHFT    ___          &kp PG_DN &kp LEFT     &kp DOWN   &kp RIGHT    &kp DEL  ___
+    ___ &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP ___          &kp PG_UP &kp HOME     &kp UP     &kp END      &kp DEL  ___
+    ___ &kp LCTRL    &kp LALT     &kp LCMD     &kp LSHFT    ___          &kp PG_DN &kp LEFT     &kp DOWN   &kp RIGHT    &kp BSPC ___
     ___ &bt BT_PRV   &bt BT_NXT   ___          &kp HYPER    ___          ___       &kp C_PREV   &kp C_PP   &kp C_NEXT   ___      ___
                                   ___          NUM_TAB      SYM_SPACE    ___       ___          ___
             >;
