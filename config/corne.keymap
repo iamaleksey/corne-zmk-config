@@ -62,6 +62,10 @@
     tapping-term-ms = <175>;
 };
 
+&caps_word {
+    continue-list = <UNDER MINUS BSPC DEL>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
