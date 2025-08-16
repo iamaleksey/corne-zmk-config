@@ -418,6 +418,10 @@ path.combo {
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
 <use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="161" y="136" height="14" width="14.0" class="combo tap glyph mdi:alpha-w-box"/>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="658" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="665" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-return"/>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-num">
