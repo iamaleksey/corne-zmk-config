@@ -157,7 +157,7 @@
             bindings = <
     ___ &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP ___          &kp PG_UP &kp HOME     &kp UP     &kp END      &kp DEL  ___
     ___ &kp LCTRL    &kp LALT     &kp LCMD     &kp LSHFT    ___          &kp PG_DN &kp LEFT     &kp DOWN   &kp RIGHT    &kp BSPC ___
-    ___ &bt BT_PRV   &bt BT_NXT   ___          &kp HYPER    ___          ___       &kp C_PREV   &kp C_PP   &kp C_NEXT   ___      ___
+    ___ &bt BT_SEL 1 &bt BT_SEL 2 ___          &kp HYPER    ___          ___       &kp C_PREV   &kp C_PP   &kp C_NEXT   ___      ___
                                   ___          NUM_TAB      SYM_SPACE    ___       ___          ___
             >;
         };

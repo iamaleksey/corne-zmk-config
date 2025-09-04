@@ -18,14 +18,14 @@ parse_config:
     "&caps_word": $$mdi:alpha-w-box$$
 
     # Bluetooth
-    "&bt BT_PRV":
+    "&bt BT_SEL 1":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
-      hold: $$mdi:chevron-double-left$$
-    "&bt BT_NXT":
+      hold: "1" 
+    "&bt BT_SEL 2":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
-      hold: $$mdi:chevron-double-right$$
+      hold: "2"
 
   zmk_keycode_map:
     # Symbols
