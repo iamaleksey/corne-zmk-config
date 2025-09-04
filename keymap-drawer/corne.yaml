@@ -155,8 +155,8 @@ layers:
   - $$mdi:backspace-outline$$
   - {type: none}
   - {type: none}
-  - {h: '$$mdi:chevron-double-left$$', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '$$mdi:chevron-double-right$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {type: none}
   - $$mdi:rocket$$
   - {type: none}
