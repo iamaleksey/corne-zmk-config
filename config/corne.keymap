@@ -78,25 +78,9 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <8 9>;
-            layers = <BASE>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <26 27>;
-            layers = <BASE>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_ret {
-            bindings = <&kp RET>;
-            key-positions = <32 33>;
+            key-positions = <8 9>;
             layers = <BASE>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -168,7 +152,6 @@
         DEFINE_HRM(hml, home_row_mod_left, &kp, &kp, RHS TMB,
             require-prior-idle-ms = <100>;
         );
-
         DEFINE_HRM(hmr, home_row_mod_right, &kp, &kp, LHS TMB,
             require-prior-idle-ms = <100>;
         );
